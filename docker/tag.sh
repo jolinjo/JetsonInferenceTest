@@ -31,6 +31,9 @@ if [ $ARCH = "aarch64" ]; then
 		if [ $L4T_REVISION_MAJOR -gt 4 ]; then
 			CONTAINER_TAG="r35.4.1"
 		fi
+	# === 新增的 R36 邏輯 ===
+    elif [ $L4T_RELEASE -eq 36 ]; then
+        CONTAINER_TAG="r36.3.0"
 	fi
 
 elif [ $ARCH = "x86_64" ]; then

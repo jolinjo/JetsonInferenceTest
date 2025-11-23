@@ -1,3 +1,28 @@
+# 忽略所有檔案
+*
+
+# 但追蹤重要的檔案類型
+!*.py
+!*.sh
+!*.md
+!*.txt
+!*.json
+!*.yaml
+!*.yml
+!CMakeLists.txt
+!*.cmake
+!*.proto
+!*.prototxt
+!*.gitignore
+!*.gitmodules
+!LICENSE*
+!README*
+!CHANGELOG*
+!Dockerfile
+!*.dockerfile
+!*.editorconfig
+
+# 忽略特定目錄
 build/
 data/networks/
 data/images/test
@@ -6,3 +31,48 @@ logs/
 *.pyc
 *.tar.gz
 *.pem
+.DS_Store
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store
+
+# 忽略編譯產物和大型檔案
+*.o
+*.so
+*.a
+*.bin
+*.exe
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.ico
+*.pdf
+*.zip
+*.tar
+*.gz
+*.bz2
+*.xz
+*.7z
+*.rar
+
+# 忽略 HTML 和文檔生成檔案
+docs/html/
+docs/*.html
+*.html
+*.css
+*.js
+!*.min.js
+!*.min.css
+
+# 忽略子模組目錄（但保留 .gitmodules）
+utils/
+ros/
+python/training/classification/
+python/training/detection/
+python/training/segmentation/
+docker/containers/
+tools/camera-capture/
+c/plugins/pose/
